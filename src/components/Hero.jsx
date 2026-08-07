@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom'
-import { SITE_CONTENT } from '../data/siteContent'
+import { Link } from "react-router-dom";
+import { SITE_CONTENT } from "../data/siteContent";
 
 export default function Hero() {
-  const { hero } = SITE_CONTENT.home
+  const { hero } = SITE_CONTENT.home;
 
   return (
-    <section className="relative overflow-hidden bg-hero-gradient">
+    <section className="relative overflow-hidden bg-primary-600">
       {/* دوائر زخرفية في الخلفية */}
       <div className="absolute rounded-full -top-24 -left-24 w-72 h-72 bg-white/5" />
       <div className="absolute bottom-0 right-0 rounded-full w-96 h-96 bg-gold-400/10 translate-x-1/3 translate-y-1/3" />
@@ -26,7 +26,10 @@ export default function Hero() {
             <Link to="/products" className="text-base shadow-xl btn-gold">
               {hero.cta}
             </Link>
-            <Link to="/services" className="text-base bg-white btn-secondary text-night-800 hover:bg-primary-50">
+            <Link
+              to="/services"
+              className="text-base bg-white btn-secondary text-night-800 hover:bg-primary-50"
+            >
               اكتشف خدماتنا
             </Link>
           </div>
@@ -42,7 +45,9 @@ export default function Hero() {
             </div>
             <div className="p-4 text-center border rounded-3xl bg-white/10 border-white/15">
               <p className="text-sm font-semibold text-white">دعم فني 24/7</p>
-              <p className="text-xs text-primary-200">مستعدين نساعدك في أي وقت</p>
+              <p className="text-xs text-primary-200">
+                مستعدين نساعدك في أي وقت
+              </p>
             </div>
           </div>
         </div>
@@ -63,5 +68,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -5,22 +5,22 @@ export default function Footer() {
   const { footer, appName } = SITE_CONTENT
 
   return (
-    <footer className="bg-primary-900 text-white mt-20">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <footer className="mt-20 text-white bg-primary-800">
+      <div className="grid grid-cols-1 gap-10 px-4 mx-auto max-w-7xl md:px-8 py-14 sm:grid-cols-2 lg:grid-cols-4">
         <div>
-          <h3 className="text-gold-400 font-display font-bold text-lg mb-4">{footer.aboutTitle}</h3>
-          <p className="text-primary-200 text-sm leading-relaxed">{footer.aboutText}</p>
-          <div className="flex items-center gap-2 mt-4 text-primary-200 font-display font-bold">
+          <h3 className="mb-4 text-lg font-bold text-gold-400 font-display">{footer.aboutTitle}</h3>
+          <p className="text-sm leading-relaxed text-primary-200">{footer.aboutText}</p>
+          <div className="flex items-center gap-2 mt-4 font-bold text-primary-200 font-display">
             {appName}
           </div>
         </div>
 
         <div>
-          <h3 className="text-gold-400 font-display font-bold text-lg mb-4">{footer.accountTitle}</h3>
+          <h3 className="mb-4 text-lg font-bold text-gold-400 font-display">{footer.accountTitle}</h3>
           <ul className="space-y-2 text-sm">
             {footer.accountLinks.map((link) => (
               <li key={link.to}>
-                <Link to={link.to} className="text-primary-200 hover:text-white transition-colors">
+                <Link to={link.to} className="transition-colors text-primary-200 hover:text-white">
                   {link.label}
                 </Link>
               </li>
@@ -29,11 +29,11 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="text-gold-400 font-display font-bold text-lg mb-4">{footer.linksTitle}</h3>
+          <h3 className="mb-4 text-lg font-bold text-gold-400 font-display">{footer.linksTitle}</h3>
           <ul className="space-y-2 text-sm">
             {footer.footerLinks.map((link) => (
               <li key={link.to}>
-                <Link to={link.to} className="text-primary-200 hover:text-white transition-colors">
+                <Link to={link.to} className="transition-colors text-primary-200 hover:text-white">
                   {link.label}
                 </Link>
               </li>
@@ -42,7 +42,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="text-gold-400 font-display font-bold text-lg mb-4">{footer.contactTitle}</h3>
+          <h3 className="mb-4 text-lg font-bold text-gold-400 font-display">{footer.contactTitle}</h3>
           <ul className="space-y-3 text-sm text-primary-200">
             {footer.contactItems.map((item) => (
               <li key={item.text} className="flex items-center gap-2">
@@ -54,7 +54,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <p className="text-center text-primary-300 text-sm border-t border-primary-800 py-5">
+      <p className="py-5 text-sm text-center border-t text-primary-300 border-primary-800">
         {footer.copyright}
       </p>
     </footer>

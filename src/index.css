@@ -51,7 +51,7 @@
   }
 
   .input-field {
-    @apply w-full px-4 py-3 transition-all bg-white border rounded-xl border-night-200 text-night-700 placeholder:text-night-400 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200;
+    @apply w-full px-4 py-3 transition-all bg-white border rounded-xl border-night-200 text-night-900 placeholder:text-night-400 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-200;
   }
 
   .card {
@@ -59,7 +59,7 @@
   }
 
   .section-title {
-    @apply relative inline-block mb-10 text-2xl font-extrabold md:text-3xl font-display text-primary-700;
+    @apply relative inline-block mb-10 text-2xl font-extrabold md:text-3xl font-display text-primary-900;
   }
 
   .hide-scrollbar {
