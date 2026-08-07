@@ -57,7 +57,7 @@ export default function ProductCard({ product }) {
           <h3 className="text-xs sm:text-base font-semibold text-night-800 leading-snug line-clamp-2 min-h-[2rem] sm:min-h-[2.5rem]">
             {product.name}
           </h3>
-          <div className="flex items-center justify-between gap-1.5">
+          <div className="flex flex-col-reverse gap-0.5 sm:flex-row sm:items-center sm:justify-between sm:gap-1.5">
             <StarRating rating={product.rating} />
             <p className="text-sm font-bold sm:text-base text-primary-700 whitespace-nowrap">
               {product.price.toFixed(2)}{" "}
@@ -70,7 +70,7 @@ export default function ProductCard({ product }) {
 
         <button
           onClick={handleAddToCart}
-          className="btn-primary w-full rounded-[1rem] py-1.5 sm:py-2 text-xs sm:text-sm font-semibold transition hover:bg-primary-800"
+          className="btn-primary w-full rounded-[1rem] py-1.5 sm:py-2 text-[11px] sm:text-sm font-semibold transition hover:bg-primary-800 whitespace-nowrap px-1"
           type="button"
         >
           إضافة إلى العربة
