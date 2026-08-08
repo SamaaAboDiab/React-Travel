@@ -12,7 +12,9 @@ export default function ProductGrid({
   return (
     <section id={id} className="px-4 py-10 mx-auto max-w-7xl md:px-8">
       <div className="flex items-center justify-between gap-1.5 mb-6 sm:gap-4">
-        <h2 className="min-w-0 section-title">{title}</h2>
+        <h2 className="min-w-0 text-lg section-title sm:text-2xl md:text-3xl">
+          {title}
+        </h2>
         {actionLabel && actionHref && (
           <Link
             to={actionHref}
